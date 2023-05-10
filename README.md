@@ -17,12 +17,12 @@ If you don't want to include a Dockerfile in your project, it is sufficient to d
   
 For Windows :
 ```
-docker run -itd --rm --name my-apache-server -p 8080:80 -v "%CD%":/var/www/html/ -w /var/www/html akshatkhatod/ubuntu_http_img
+docker run -itd --rm --name my-apache-server -p 8080:80 -v "%CD%":/var/www/html/ -w /var/www/html akshatkhatod/ubuntu_http_server
 ```
 
 For Linux :
 ```
-docker run -itd --rm --name my-apache-server -p 8080:80 -v "$PWD":/var/www/html/ -w /var/www/html akshatkhatod/ubuntu_http_img
+docker run -itd --rm --name my-apache-server -p 8080:80 -v "$PWD":/var/www/html/ -w /var/www/html akshatkhatod/ubuntu_http_server
 ```
 
 It connects with the index.html file saved on your present working directory. Go to localhost:<port_no> (in this case localhost:8080) to check if the server is working and see any changes done in the index.html file. That's all, your http server is up and running.
