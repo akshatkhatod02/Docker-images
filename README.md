@@ -13,7 +13,8 @@ You have to bind the port of the image after building it. To do that, use:
 docker run -d -p 8080:80 <image_name>
 ```
 
-If you don't want to include a Dockerfile in your project, it is sufficient to do the following:
+If you don't want to include a Dockerfile in your project, it is sufficient to do the following:  
+  
 For Windows :
 ```
 docker run -itd --rm --name my-apache-server -p 8080:80 -v "%CD%":/var/www/html/ -w /var/www/html akshatkhatod/ubuntu_http_img
