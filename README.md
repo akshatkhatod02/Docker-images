@@ -1,6 +1,7 @@
 # Docker-images
 
-ubuntu-http-server
+##ubuntu-http-server
+Checkout the dockerfile provided along with this.  
 A docker image having ubuntu as OS and apache2 installed. You can do changes as per your needs. To build the docker file, do:
 ```
 docker build -t <img_name> -f <docker_file> .
